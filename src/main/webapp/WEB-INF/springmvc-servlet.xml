@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
 <!-- need to rename this to match the package -->
-<context:component-scan base-package="edu.dmacc.spring.individualproject"></context:component-scan>
+<context:component-scan base-package="edu.dmacc.spring.libraryproject"></context:component-scan>
 
 <context:annotation-config/>
 <mvc:annotation-driven/>
