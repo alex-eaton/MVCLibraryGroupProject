@@ -10,7 +10,7 @@ public class BookController {
 	private static final String[] genres = {"Fiction", "Non-Fiction", "History", "Horror"};
 	
 	@RequestMapping(value = "/bookForm")
-	public ModelAndView foodPantry() {
+	public ModelAndView book() {
 		ModelAndView modelAndView = new ModelAndView();
 
 		modelAndView.setViewName("bookForm");
