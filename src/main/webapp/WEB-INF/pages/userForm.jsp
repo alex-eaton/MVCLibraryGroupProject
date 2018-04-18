@@ -26,8 +26,8 @@
 	        	</td>
 	    </tr>
             <tr>
-            <td><mvc:label path="status">Member Status</mvc:label></td>
-            <td><mvc:select path="status" items="${statuses}" /></td>
+            <td><mvc:label path="memberStatus">Member Status</mvc:label></td>
+            <td><mvc:select path="memberStatus" items="${statuses}" /></td>
         </tr>
         <tr>
 	        <td colspan="2">

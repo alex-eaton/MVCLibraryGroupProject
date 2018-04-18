@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class UserController {
+	
 	private static final String[] statuses = {"Platinum", "Gold", "Silver", "Bronze"};
 	
 	@RequestMapping(value = "/userForm")
@@ -14,7 +15,7 @@ public class UserController {
 
 		modelAndView.setViewName("userForm");
 		modelAndView.addObject("user", new User());
-		modelAndView.addObject("statuses", statuses);
+		modelAndView.addObject("memberStatuses", statuses);
 
 		return modelAndView;
 	}
