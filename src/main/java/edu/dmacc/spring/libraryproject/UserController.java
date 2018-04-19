@@ -15,8 +15,18 @@ public class UserController {
 
 		modelAndView.setViewName("userForm");
 		modelAndView.addObject("user", new User());
-		modelAndView.addObject("memberStatuses", statuses);
+		modelAndView.addObject("statuses", statuses);
 
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/result")
+	public ModelAndView processUser(User user) {
+		System.out.println("in process user");
+		ModelAndView modelAndView = new ModelAndView();
+		System.out.println("Value in getName" + user.getFirstname() + " " + user.getLastname());
+		modelAndView.setViewName("result");
+		modelAndView.addObject("u", user);
 		return modelAndView;
 	}
 
