@@ -1,1 +1,1 @@
-<%response.sendRedirect("userForm.mvc"); %>
+<%response.sendRedirect("homePage.mvc"); %>

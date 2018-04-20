@@ -29,5 +29,14 @@ public class UserController {
 		modelAndView.addObject("u", user);
 		return modelAndView;
 	}
+	@RequestMapping(value = "/homePage")
+	public ModelAndView homePage() {
+		ModelAndView modelAndView = new ModelAndView();
+
+		modelAndView.setViewName("homePage");
+	
+
+		return modelAndView;
+	}
 
 }
