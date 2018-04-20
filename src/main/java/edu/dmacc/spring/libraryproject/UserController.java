@@ -13,6 +13,7 @@ public class UserController {
 	@Autowired UserDao dao;
 
 	private static final String[] statuses = { "Platinum", "Gold", "Silver", "Bronze" };
+	private static final String[] genres = {"Fiction", "Non-Fiction", "History", "Horror"};
 
 	@RequestMapping(value = "/userForm")
 	public ModelAndView user() {
@@ -45,12 +46,6 @@ public class UserController {
 		return modelAndView;
 	}
 	
-	@Bean
-	public UserDao dao() {
-		UserDao bean = new UserDao();
-		return bean;
-	}
-	
 	@RequestMapping(value = "/viewAllUsers")
 	public ModelAndView viewAllUsers() {
 		ModelAndView modelAndView = new ModelAndView();
@@ -60,5 +55,21 @@ public class UserController {
 		return modelAndView;
 		
 	}
+/*
+	@RequestMapping(value = "/bookForm")
+	public ModelAndView book() {
+		ModelAndView modelAndView = new ModelAndView();
 
+		modelAndView.setViewName("bookForm");
+		modelAndView.addObject("book", new Book());
+		modelAndView.addObject("genres", genres);
+
+		return modelAndView;
+	}
+	*/
+	@Bean
+	public UserDao dao() {
+		UserDao bean = new UserDao();
+		return bean;
+	}
 }

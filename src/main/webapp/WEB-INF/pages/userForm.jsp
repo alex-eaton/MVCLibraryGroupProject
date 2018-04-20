@@ -25,11 +25,11 @@
 	        <td><mvc:radiobuttons path="gender" />
 	        	</td>
 	    </tr>
-            <tr>
-            <td><mvc:label path="memberStatus">Member Status</mvc:label></td>
-            <td><mvc:select path="memberStatus" items="${statuses}" /></td>
-        </tr>
-        <tr>
+			<tr>
+				<td><mvc:label path="memberStatus">Member Status</mvc:label></td>
+				<td><mvc:select path="memberStatus" items="${statuses}" /></td>
+			</tr>
+			<tr>
 	        <td colspan="2">
                 <input type="submit" value="Submit" />
 	        </td>
@@ -37,7 +37,7 @@
 	</table>  
 </mvc:form>
 <a href = "userForm.mvc">Add User</a>
-<a href = "viewAllUsers.mvc">Add Book</a>
+<a href = "bookForm.mvc">Add Book</a>
 <a href = "viewAllUsers.mvc">View all Users</a>
 <a href = "viewAllUsers.mvc">View all Books</a>
 </body>
