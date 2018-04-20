@@ -13,10 +13,10 @@
 <body>
 <h1>View All Books</h1>
 	<br />
-	<a href="bookForm.mvc">Add a new book</a>
+	<a href="bookForm.mvc">Add new book</a>
 	<br />
 	<br />
-	<a href="home.mvc">Back to main menu</a>
+	<a href="homePage.mvc">Home</a>
 	<br />
 	<br />
 	<mvc:form modelAttribute="book" action="viewAllBooks.mvc">

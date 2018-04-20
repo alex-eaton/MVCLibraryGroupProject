@@ -91,21 +91,14 @@ public class UserController {
 		modelAndView.addObject("u", book);
 		return modelAndView;
 	}
-	
-<<<<<<< HEAD
-	@RequestMapping(value = "/deletebook")
-	public ModelAndView deleteBook() {
-		ModelAndView modelAndView = new ModelAndView();
 
-		modelAndView.setViewName("deletebook");
-=======
 	@RequestMapping(value = "/bookcheckout")
 	public ModelAndView booklog() {
 		ModelAndView modelAndView = new ModelAndView();
 
 		modelAndView.setViewName("bookcheckout");
 		modelAndView.addObject("booklog", new BookLog());
->>>>>>> e30c6936e65d2b7aeab640b933c0ccd25923bc1a
+
 
 		return modelAndView;
 	}
