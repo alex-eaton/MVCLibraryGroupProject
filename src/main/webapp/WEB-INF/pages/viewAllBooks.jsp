@@ -39,6 +39,7 @@
 		<br />
 	</c:forEach>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<a href="userForm.mvc">Add User |</a>
 	<a href = "bookForm.mvc">Add Book |</a>
 	<a href = "viewAllUsers.mvc">View all Users</a>
@@ -46,6 +47,9 @@
 =======
 	<a href = "homePage.mvc">View HomePage</a>
 >>>>>>> b7e5d04ddd3ace48b08ec88453b155a0505ad42c
+=======
+	<a href = "homePage.mvc">View HomePage</a>
+>>>>>>> 39a5cc44bc714588d30c59098cf214add84319e1
 
 </body>
 </html>
