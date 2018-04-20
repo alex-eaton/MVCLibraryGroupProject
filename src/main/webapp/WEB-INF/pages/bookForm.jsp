@@ -32,7 +32,7 @@
 			</tr>
 			<tr>
 				<td><mvc:label path="bookStatus">Book Status</mvc:label></td>
-				<td><mvc:select path="bookStatus" /></td>
+				<td><mvc:radiobuttons path="bookStatus" /></td>
 			</tr>
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
@@ -42,6 +42,6 @@
 	<a href="userForm.mvc">Add User</a>
 	<a href="bookForm.mvc">Add Book</a>
 	<a href="viewAllUsers.mvc">View all Users</a>
-	<a href="viewAllUsers.mvc">View all Books</a>
+	<a href="viewAllBooks.mvc">View all Books</a>
 </body>
 </html>
