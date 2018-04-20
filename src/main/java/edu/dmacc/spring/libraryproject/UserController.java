@@ -91,4 +91,14 @@ public class UserController {
 		modelAndView.addObject("u", book);
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = "/bookcheckout")
+	public ModelAndView booklog() {
+		ModelAndView modelAndView = new ModelAndView();
+
+		modelAndView.setViewName("bookcheckout");
+		modelAndView.addObject("booklog", new BookLog());
+
+		return modelAndView;
+	}
 }

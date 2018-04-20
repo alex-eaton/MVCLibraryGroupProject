@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class bookController {
+public class BookController {
 	@Autowired BookDao dao;
 	
 	private static final String[] genres = {"Fiction", "Non-Fiction", "History", "Horror"};
