@@ -19,7 +19,7 @@
 	<a href="home.mvc">Back to main menu</a>
 	<br />
 	<br />
-	<mvc:form modelAttribute="book" action="homePage.mvc">
+	<mvc:form modelAttribute="book" action="viewAllBooks.mvc">
 		<table>
 			<tr>
 				<th>Selection</th>

@@ -44,4 +44,13 @@ public class BookDao {
 		em.getTransaction().commit();
 		em.close();
 	}
+	
+	public void editBook(Book toEdit) {
+		// TODO Auto-generated method stub
+		EntityManager em = emfactory.createEntityManager();
+		em.getTransaction().begin(); 
+		em.merge(toEdit);
+		em.getTransaction().commit();
+		em.close();
+	}
 }
