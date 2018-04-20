@@ -13,20 +13,24 @@
 	<c:forEach items="${all}" var="item">
 		<table>
 			<tr>
-				<td>First Name</td>
-				<td>${item.firstname}</td>
+				<td>Title</td>
+				<td>${item.bookTitle}</td>
 			</tr>
 			<tr>
-				<td>Last name</td>
-				<td>${item.lastname}</td>
+				<td>Author</td>
+				<td>${item.author}</td>
 			</tr>
 			<tr>
-				<td>Gender</td>
-				<td>${item.gender}</td>
+				<td>Description</td>
+				<td>${item.bookDesc}</td>
 			</tr>
 			<tr>
-				<td>Member Status</td>
-				<td>${item.memberStatus}</td>
+				<td>Genre</td>
+				<td>${item.genre}</td>
+			</tr>
+			<tr>
+				<td>Book Status</td>
+				<td>${item.bookStatus}</td>
 			</tr>
 
 		</table>
@@ -36,7 +40,7 @@
 	</c:forEach>
 	<a href="userForm.mvc">Add User |</a>
 	<a href = "bookForm.mvc">Add Book |</a>
-	<a href = "viewAllBooks.mvc">View all Books</a>
+	<a href = "viewAllUsers.mvc">View all Users</a>
 	<br><a href = "homePage.mvc">Home</a>
 
 </body>

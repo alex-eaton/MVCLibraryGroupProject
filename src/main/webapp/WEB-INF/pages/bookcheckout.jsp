@@ -9,13 +9,13 @@
 <title>Spring MVC Form Handling</title>
 </head>
 <body>
-<center><h2>Amazing Library Site Home Page</h2></center>
+<h2>Book Checkout Form</h2>
 <mvc:form modelAttribute="user" action="result.mvc"> 
 </mvc:form>
-	<center><a href="userForm.mvc">Add User</a></center>
-	<center><a href="bookForm.mvc">Add Book</a></center>
-	<center><a href="viewAllUsers.mvc">View all Users</a></center>
-	<center><a href="viewAllBooks.mvc">View all Books</a></center>
+	<a href="userForm.mvc">Add User</a>
+	<a href="bookForm.mvc">Add Book</a>
+	<a href="viewAllUsers.mvc">View all Users</a>
+	<a href="viewAllBooks.mvc">View all Books</a>
 
 </body>
 </html>

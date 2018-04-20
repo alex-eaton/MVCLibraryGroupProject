@@ -55,7 +55,17 @@ public class UserController {
 		return modelAndView;
 		
 	}
-/*
+	
+	@RequestMapping(value = "/viewAllBooks")
+	public ModelAndView viewAllBooks() {
+		ModelAndView modelAndView = new ModelAndView();
+		List<Book> allBooks = dao.getAllBooks();
+		modelAndView.setViewName("viewAllBooks");
+		modelAndView.addObject("all", allBooks);
+		return modelAndView;
+		
+	}
+
 	@RequestMapping(value = "/bookForm")
 	public ModelAndView book() {
 		ModelAndView modelAndView = new ModelAndView();
@@ -66,10 +76,19 @@ public class UserController {
 
 		return modelAndView;
 	}
-	*/
+	
 	@Bean
 	public UserDao dao() {
 		UserDao bean = new UserDao();
 		return bean;
+	}
+	
+	@RequestMapping(value = "/bookresult")
+	public ModelAndView processBook(Book book) {
+		ModelAndView modelAndView = new ModelAndView();
+	    dao.insertBook(book);
+		modelAndView.setViewName("bookresult");
+		modelAndView.addObject("u", book);
+		return modelAndView;
 	}
 }
