@@ -91,4 +91,13 @@ public class UserController {
 		modelAndView.addObject("u", book);
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = "/deletebook")
+	public ModelAndView deleteBook() {
+		ModelAndView modelAndView = new ModelAndView();
+
+		modelAndView.setViewName("deletebook");
+
+		return modelAndView;
+	}
 }

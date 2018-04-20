@@ -27,4 +27,21 @@ public class BookDao {
 		List<Book> all = typedQuery.getResultList();
 		return all;
 	}
+	
+	public void deleteBook(Book booktoDelete) {
+		// TODO Auto-generated method stub
+		EntityManager em = emfactory.createEntityManager();
+		em.getTransaction().begin();
+		TypedQuery<Book> typedQuery = em.createQuery(
+				"select li from Book li where li.id = :selectedId",
+				Book.class);
+		
+		typedQuery.setParameter("selectedId", booktoDelete.getId()); 
+		typedQuery.setMaxResults(1);
+		Book result = typedQuery.getSingleResult();
+		System.out.println("TEST - result: " + result);
+		em.remove(result);
+		em.getTransaction().commit();
+		em.close();
+	}
 }

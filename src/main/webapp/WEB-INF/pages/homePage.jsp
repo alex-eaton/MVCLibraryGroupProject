@@ -17,6 +17,7 @@
 	<center><a href="bookForm.mvc">Add Book</a></center>
 	<center><a href="viewAllUsers.mvc">View all Users</a></center>
 	<center><a href="viewAllBooks.mvc">View all Books</a></center>
+	<center><a href="deletebook.mvc">Delete Book</a></center>
 
 </body>
 </html>

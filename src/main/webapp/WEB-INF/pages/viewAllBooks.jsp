@@ -7,43 +7,50 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>All Users</title>
+<title>All Books</title>
+
 </head>
 <body>
-	<c:forEach items="${all}" var="item">
+<h1>View All Books</h1>
+	<br />
+	<a href="bookForm.mvc">Add a new book</a>
+	<br />
+	<br />
+	<a href="home.mvc">Back to main menu</a>
+	<br />
+	<br />
+	<mvc:form modelAttribute="book" action="homePage.mvc">
 		<table>
 			<tr>
-				<td>Title</td>
-				<td>${item.bookTitle}</td>
+				<th>Selection</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Genre</th>
+				<th>Status</th>
 			</tr>
-			<tr>
-				<td>Author</td>
-				<td>${item.author}</td>
-			</tr>
-			<tr>
-				<td>Description</td>
-				<td>${item.bookDesc}</td>
-			</tr>
-			<tr>
-				<td>Genre</td>
-				<td>${item.genre}</td>
-			</tr>
-			<tr>
-				<td>Book Status</td>
-				<td>${item.bookStatus}</td>
-			</tr>
+			<c:forEach items="${all}" var="item">
+				<tr>
+					<td><input type="radio" name="xid"
+						value="${item.id}"></td>
+					<td>${item.bookTitle}</td>
 
+					<td>${item.author}</td>
+
+					<td>${item.genre}</td>
+
+					<td>${item.bookStatus}</td>
+
+				</tr>
+
+
+			</c:forEach>
 		</table>
-		<br />
-		<hr style="text-align: left; margin-left: 0; width: 25%">
-		<br />
-	</c:forEach>
-
-	<a href="userForm.mvc">Add User |</a>
-	<a href = "bookForm.mvc">Add Book |</a>
-	<a href = "viewAllUsers.mvc">View all Users</a>
-	<br><a href = "homePage.mvc">Home</a>
-
+<br />
+		<input type="submit" value="Edit Selected Book"
+			name="doThisToBook">
+		<input type="submit" value="Delete Selected Book"
+			name="doThisToBook">
+	</mvc:form>
 
 </body>
 </html>
