@@ -27,6 +27,9 @@
             <td>${u.memberStatus}</td>
         </tr>
         </table>
+<a href = "userForm.mvc">Add User</a>
+<a href = "viewAllUsers.mvc">Add Book</a>
 <a href = "viewAllUsers.mvc">View all Users</a>
+<a href = "viewAllUsers.mvc">View all Books</a>
 </body>
 </html>
