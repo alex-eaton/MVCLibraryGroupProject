@@ -32,10 +32,17 @@
 			<td>${u.bookStatus}</td>
 		</tr>
 	</table>
+<<<<<<< HEAD
 	<a href="userForm.mvc">Add User |</a>
 	<a href="bookForm.mvc">Add Book |</a>
 	<a href="viewAllUsers.mvc">View all Users |</a>
 	<a href="viewAllBooks.mvc">View all Books |</a>
 	<br><a href = "homePage.mvc">Home</a>
+=======
+	<a href="userForm.mvc">Add User</a>
+	<a href="bookForm.mvc">Add Book</a>
+	<a href="viewAllUsers.mvc">View all Users</a>
+	<a href="viewAllBooks.mvc">View all Books</a>
+>>>>>>> b7e5d04ddd3ace48b08ec88453b155a0505ad42c
 </body>
 </html>
