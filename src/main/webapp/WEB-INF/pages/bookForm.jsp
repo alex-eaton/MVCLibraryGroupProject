@@ -20,13 +20,15 @@
 				<td><mvc:label path="author">Author</mvc:label></td>
 				<td><mvc:input path="author" /></td>
 			</tr>
+			
 			<tr>
 				<td><mvc:label path="bookDesc">Description</mvc:label></td>
-				<td><mvc:radiobuttons path="bookDesc" /></td>
+				<td><mvc:input path="bookDesc" /></td>
 			</tr>
+			
 			<tr>
 				<td><mvc:label path="genre">Genre</mvc:label></td>
-				<td><mvc:radiobuttons path="genre" items="${genres}"/></td>
+				<td><mvc:select path="genre" items="${genres}"/></td>
 			</tr>
 			<tr>
 				<td><mvc:label path="bookStatus">Book Status</mvc:label></td>
